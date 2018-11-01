@@ -5,19 +5,35 @@ body {
     margin: 0;
 }
 
+p {
+    font-size: 12px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 60px;
+}
+
+h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 100;
+}
+
 .header-nav {
     display: flex;
     position: relative;
     justify-content: center;
-    margin-top: 25px;
     width: 100%;
-    height: 75px;
+    height: 2.2cm;
 }
 
 #logo {
-    margin-left: 30px;
-    width: 50%;
+    margin: auto;
+    width: 80%;
     font-size: 36px;
+    margin-left: 1cm;
+    cursor: pointer;
 }
 
 #logo img {
@@ -30,46 +46,78 @@ body {
     display: inline-flex;
     position: relative;
     justify-content: flex-end;
-    margin-right: 30px;
-    padding: 10px;
-    width: 50%;
+    margin: auto;
+    margin-right: 1cm;
 }
 
 .icon {
-    width: 25px;
-    height: 25px;
-    padding: 10px;
+    width: 20px;
+    height: 20px;
     cursor: pointer;
+    padding: 10px;
 }
 
 .menu-line {
-    width: 30px;
+    width: 20px;
     height: 2px;
     background-color: black;
-    margin: 6px 0;
+    margin: 4px 0;
 }
 
 /*BANNER*/
 #banner {
-    background-color: #86214d;
+    width: 100%;
     color: white;
     display: flex;
     position: relative;
     justify-content: center;
-    height: 400px;
 }
 
 #connect {
-    padding: 10px;
-    width: 10%
+    background-color: #86214d;
+    padding: 4cm 1cm;
+    width: 20%;
 }
 
 #social-media {
     list-style: none;
+    padding: 0;
 }
 
+#social-media li {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #9a2b5c;
+    border-radius: 25px;
+    padding: 5px;
+    margin: 10px 0;
+}
+
+#social-media li:hover {
+    border: 2px solid #f8f7f7;
+}
+
+
 #tagline {
-    width: 40%;
+    background-color: #86214d;
+    padding: 3cm 1cm;
+    width: 30%;
+}
+
+#tagline button {
+    border: none;
+    background-color: #86214d;
+    color: white;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 40px;
+    padding: 0;
+
+}
+
+#tagline button:hover {
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 #slide-show {
@@ -81,27 +129,83 @@ body {
 /*ABOUT US*/
 
 .container {
-    max-width: 400px;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    width: 100%;
+}
+
+.col {
+    padding: 10px;
+}
+
+/*SERVICES*/
+
+#services {
+    padding: 20px;
 }
 
 .section-intro {
     text-align: center
 }
 
-/*SERVICES*/
+#booking {
+    display: inline-flex;
+    position: relative;
+    justify-content: center;
+    text-align: center;
+}
+
+.icon-2 {
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+    border: 2px solid white;
+}
+
+.icon-2:hover {
+    border: 2px solid #f8f7f7;
+    border-radius: 50px;
+}
 
 /*RESPONSIVE STYLES*/
 
+@media screen and (max-width: 800px) {
+    #banner {
+        flex-wrap: wrap;
+    }
+    #connect {
+        display: inline-flex;
+        position: relative;
+        justify-content: center;
+        width: 100%;
+    }
+    #social-media {
+        display: inline-flex;
+        position: relative;
+        justify-content: center;
+        width: 100%;
+    }
+    #tagline {
+        width: 100%;
+    }
+    #slide-show {
+        width: 100%;
+    }
+}
 @media screen and (max-width: 450px) {
     .header-nav {
         flex-wrap: wrap;
+        height: auto;
     }
     #logo {
         width: 100%;
         text-align: center;
+        margin-left: 0;
     }
     .right-nav {
         width: 100%;
         justify-content: center;
+        margin-right: 0;
     }
 }
