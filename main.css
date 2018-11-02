@@ -1,4 +1,4 @@
-/*HEADER*/
+/*CONTENT*/
 
 body {
     font-family: 'Playfair Display', serif;
@@ -24,6 +24,8 @@ h2 {
 div {
     padding: 2px;
 }
+
+/*HEADER*/
 
 .header-nav {
     display: flex;
@@ -100,6 +102,7 @@ div {
 
 #social-media li:hover {
     border: 2px solid #f8f7f7;
+    cursor: pointer;
 }
 
 
@@ -146,7 +149,7 @@ div {
     left: 300px;
 }
 
-/*ABOUT US*/
+/*FLEX .CONTAINER.ROW.COL*/
 
 .container {
     display: flex;
@@ -170,19 +173,28 @@ div {
     margin: 100px 0;
 }
 
+.col3 {
+    padding: 20px;
+    width: 25%;
+}
+
+/*ABOUT US*/
+
 #video{
+    position: relative;
     width: 400px;
     height: 250px;
-    background-color:#e0dfe0;
+    background-color:#e1e1e1;
     box-shadow: 2px 2px 10px 1px #e0dee0e3;
 }
 
 #video img {
-    position: absolute;
-    top: 200px;
-    left: 500px;
-    width: 70px;
-    height: 70px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    margin-top: -40px;
+    margin-left: -35px;
+    cursor: pointer;
 }
 
 #profile {
@@ -210,11 +222,6 @@ div {
   
 
 /*SERVICES*/
-
-.col3 {
-    padding: 20px;
-    width: 25%;
-}
 
 .section-intro {
     text-align: center;
