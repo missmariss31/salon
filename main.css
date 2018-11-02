@@ -104,7 +104,7 @@ h2 {
 
 #tagline {
     background-color: #86214d;
-    padding: 3cm 1cm;
+    padding: 3cm 0;
     width: 30%;
 }
 
@@ -136,13 +136,19 @@ h2 {
     overflow: hidden;
 }
 
+#slide-show img {
+    position: absolute;
+    top: -100px;
+    left: -60px;
+}
+
 #slide-show h1 {
     font-family: 'Poppins', sans-serif;
-    font-size: 218px;
+    font-size: 240px;
     margin: 0;
     position: absolute;
-    top: 400px;
-    left: 300px;
+    top: 345px;
+    left: 270px;
 }
 
 /*FLEX .CONTAINER.ROW.COL*/
@@ -195,6 +201,9 @@ h2 {
 
 #profile {
     text-align: right;
+    max-width: 210px;
+    margin-left: 50px;
+    margin-top: 140px;
 }
 
 #signature {
@@ -302,6 +311,8 @@ h2 {
     }
     #profile {
         text-align: center;
+        margin: auto;
+        width: 100%;
     }
     #booking {
         flex-wrap: wrap;
