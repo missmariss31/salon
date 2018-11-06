@@ -1,7 +1,7 @@
 /*CONTENT*/
 
 body {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Poppins', sans-serif;
     color: #716f70;
     margin: 0;
 }
@@ -11,14 +11,30 @@ p {
 }
 
 h1 {
+    font-family: 'Playfair Display', serif;
     font-size: 60px;
 }
 
 h2 {
     font-family: 'Poppins', sans-serif;
-    font-size: 16px;
+    text-transform: uppercase;
+    font-size: 10px;
     font-weight: 100;
     letter-spacing: 2px;
+    color: #8b8a8b;
+}
+
+h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+a h2:hover {
+    color: #86214d;
 }
 
 /*HEADER*/
@@ -83,7 +99,7 @@ h2 {
 #connect {
     background-color: #86214d;
     padding: 4cm 1cm;
-    width: 15%;
+    width: 10%;
 }
 
 #social-media {
@@ -92,33 +108,43 @@ h2 {
 }
 
 #social-media li {
+    background-color: white;
+    opacity: 0.4;
+    color: #9a2b5c;
     text-align: center;
     width: 20px;
     height: 20px;
-    border: 2px solid #9a2b5c;
+    border: 1px solid #9a2b5c;
     border-radius: 25px;
     padding: 5px;
     margin: 20px 0;
 }
 
 #social-media li:hover {
-    border: 2px solid #f8f7f7;
+    border: 1px solid #f8f7f7;
+    opacity: 0.7;
     cursor: pointer;
 }
 
 
 #tagline {
     background-color: #86214d;
-    padding: 3cm 0;
+    padding: 3cm 1cm;
     width: 30%;
+}
+
+#tagline h2 {
+    color: white;
+    font-size: 14px;
 }
 
 #tagline button {
     border: none;
     background-color: #86214d;
     color: white;
-    font-size: 16px;
+    font-size: 10px;
     font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
     margin-top: 40px;
     padding: 0;
     letter-spacing: 2px;
@@ -130,7 +156,7 @@ h2 {
     cursor: pointer;
 }
 
-#slide-show {
+#side {
     display: flex;
     position: relative;
     justify-content: flex-end;
@@ -141,19 +167,25 @@ h2 {
     overflow: hidden;
 }
 
-#slide-show img {
+#side img {
     position: absolute;
-    top: -140px;
-    left: -10px;
+    /* top: -140px; */
+    left: -35px;
 }
 
-#slide-show h1 {
+img#polish {
+    position: absolute;
+    top: 400px;
+    right: 105px;
+}
+
+#side h1 {
     font-family: 'Poppins', sans-serif;
-    font-size: 245px;
+    font-size: 275px;
     margin: 0;
     position: absolute;
-    top: 330px;
-    left: 310px;
+    top: 300px;
+    left: 260px;
 }
 
 /*FLEX .CONTAINER.ROW.COL*/
@@ -181,8 +213,9 @@ h2 {
 }
 
 .col3 {
-    padding: 20px;
-    width: 25%;
+    padding: 5px;
+    max-width: 200px;
+    text-align: center;
 }
 
 /*ABOUT US*/
@@ -242,10 +275,11 @@ h2 {
 .section-intro {
     text-align: center;
     width: 100%;
+    padding-top: 60px;
 }
 
 .section-intro h3 {
-    font-size: 24px;
+    font-size: 36px;
 }
 
 #booking {
@@ -270,8 +304,15 @@ h2 {
 }
 
 .service-btn {
+    background-color: white;
     color: #716f70;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 10px;
+    font-weight: bold;
     padding: 5px 20px;
+    margin: 10px;
     border: 1px solid #d7d7d7;
     cursor: pointer;
 }
@@ -281,9 +322,58 @@ h2 {
     background-color: #86214d;
 }
 
+/*RECENT WORKS*/
+
+.beauty {
+    position: absolute;
+    font-size: 350px;
+    color: #e7d7de69;
+    top: -225px;
+    left: -730px;
+}
+.beauty.bottom {
+    top: 465px;
+    left: 685px;
+}
+
+#recent-work {
+    background-color: #f8f7f7;
+    overflow: hidden;
+}
+
+.promo-nav {
+    list-style: none;
+    display: inline-flex;
+    position: relative;
+    padding: 0;
+}
+
+.promo-nav li {
+    margin: 10px;
+}
+
+.promo-nav li h2:hover {
+    color: #86214d;
+}
+
+.work img:hover {
+    box-shadow: 5px 5px 0px 0px #86214d;
+}
+
+#link-left {
+    justify-content: left;
+    max-width: 600px;
+    margin: 10px;
+}
+
 
 /*RESPONSIVE STYLES*/
 
+@media screen and (max-width: 1430px) {
+    img#polish {
+        display: none;
+    }
+}
 @media screen and (max-width: 800px) {
     #banner {
         flex-wrap: wrap;
@@ -311,7 +401,7 @@ h2 {
         padding: 20px;
         margin: auto;
     }
-    #slide-show {
+    #side {
         width: 100%;
         height: 600px;
         margin: auto;
@@ -353,5 +443,8 @@ h2 {
     }
     .col3 {
         max-width: 210px;
+    }
+    #link-left {
+        justify-content: center;
     }
 }
