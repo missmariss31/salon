@@ -30,6 +30,20 @@ h3 {
     margin: 0;
 }
 
+h4 {
+    font-family: cursive;
+    font-weight: 100;
+    font-size: 12px;
+    margin-bottom: 2px;
+}
+
+hr {
+    border: 0;
+    background: #ededed;
+    height: 1px;
+    width: 80%;
+}
+
 a {
     text-decoration: none;
 }
@@ -366,6 +380,74 @@ img#polish {
     margin: 10px;
 }
 
+/*BOOKING*/
+
+.side {
+    border: 3px solid #86214d;
+    margin: 30px 0;
+    padding: 20px;
+    width: 150px;
+    opacity: 0.9;
+    text-align: left;
+}
+
+.middle {
+    box-shadow: 2px 2px 5px 2px grey;
+    padding: 30px;
+    max-width: 500px;
+}
+
+#calendar {
+    padding-top: 60px;
+}
+
+#calendar h1 {
+    font-size: 36px;
+    margin-top: 10px;
+}
+
+#calendar p {
+    font-size: 10px;
+    font-weight: bold;
+    margin: 0;
+}
+
+#schedule {
+    border-right: none;
+}
+
+#prices {
+    border-left: none;
+    color: white;
+    background-color: #86214d;
+}
+
+#prices h4 {
+    margin-right: 30px;
+}
+
+#prices p span {
+    margin-left: 80px;
+}
+
+.calendar thead {
+    font-size: 12px;
+    color: #86214d;
+}
+
+.calendar tbody td {
+    border: 2px solid white;
+    border-radius: 25px;
+    padding: 10px;
+    font-size: 10px;
+    width: 16px;
+}
+
+.calendar tbody td:hover {
+    border: 2px solid #ededed;
+    color: #86214d;
+}
+
 
 /*RESPONSIVE STYLES*/
 
@@ -417,6 +499,25 @@ img#polish {
     #booking {
         flex-wrap: wrap;
         padding: 30px 0;
+    }
+    #schedule {
+        text-align: center;
+        border-right: 3px solid #86214d;
+    }
+    .calendar {
+        display: flex;
+        justify-content: center;
+    }
+    .calendar tbody td {
+        border: 2px solid white;
+        border-radius: 25px;
+        padding: 5px;
+        font-size: 9px;
+        width: 10px;
+    }
+    #prices {
+        text-align: center;
+        border-left: 3px solid #86214d;
     }
 }
 @media screen and (max-width: 450px) {
