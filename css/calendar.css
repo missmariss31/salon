@@ -3,11 +3,11 @@
     align-items: center;
     text-align: center;
     box-shadow: 2px 2px 5px 2px grey;
-    padding: 30px;
+    padding: 20px;
     max-width: 300px;
 }
 .cview__header {
-    font-size: 12px;
+    font-family: 'Poppins', sans-serif;
     color: #86214d;
 }
 .cview--date {
@@ -28,6 +28,9 @@
 .calendar__title{
     text-align: center;
 }
+
+/*BOOKING POP-UP*/
+
 .calendar--day-view{
     position: absolute;
     border-radius: 3px;
@@ -35,7 +38,7 @@
     width: 50%;
     height: 350px;
     background: rgba(255,255,255,1);
-    box-shadow: 3px 12px 5px rgba(2,2,2,0.16);
+    box-shadow: 5px 5px 10px 5px rgba(2,2,2,0.16);
     z-index: 2;
     overflow: hidden;
     transform: scale(0.9) translate(30px,30px);
@@ -296,7 +299,6 @@ input.add-event-edit:-ms-input-placeholder {
     font-weight: 800;
     font-size: 22px;
     font-family: 'Avenir', sans-serif;
-    padding-bottom: 20px;
     color: #222;
     text-transform: uppercase;
     display: flex;
@@ -305,9 +307,10 @@ input.add-event-edit:-ms-input-placeholder {
     justify-content: space-around;
 }
 .cview__month-last,.cview__month-next,.cview__month-current{
+    font-family: 'Poppins', sans-serif;
     width: 33.33333%;
     text-align: center;
-    font-size: 16px;
+    font-size: 10px;
     cursor: pointer;
     color: #222;
 }
@@ -337,7 +340,7 @@ input.add-event-edit:-ms-input-placeholder {
     text-align: center;
     overflow: hidden;
     text-overflow: clip;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 900;
 }
 .cview--date{
@@ -388,16 +391,20 @@ input.add-event-edit:-ms-input-placeholder {
     z-index: 0;
 }
 .footer{
+    margin-top: 10px;
     width: 100%;
-    font-size: 12px;
+    font-size: 10px;
     text-align: center;
 }
 .footer__link{
     cursor: pointer;
     padding: 2px 5px;
+}
+.footer__link:hover{
     border-bottom: 1px solid #86214d;
 }
-@media screen and (max-width: 400px) {
+
+@media screen and (max-width: 600px) {
     .app {
         max-width: 250px;
         height: auto;
