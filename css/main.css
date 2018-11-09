@@ -154,20 +154,20 @@ a h2:hover {
 
 #tagline button {
     border: none;
+    border-bottom: 1px solid #86214d;
     background-color: #86214d;
     color: white;
     font-size: 10px;
     font-family: 'Poppins', sans-serif;
     text-transform: uppercase;
-    margin-top: 40px;
-    padding: 0;
+    margin: 20px 0;
+    padding: 5px;
     letter-spacing: 2px;
-
+    cursor: pointer;
 }
 
 #tagline button:hover {
-    text-decoration: underline;
-    cursor: pointer;
+    border-bottom:1px solid #f8f7f7;
 }
 
 #side {
@@ -370,8 +370,13 @@ img#polish {
     color: #86214d;
 }
 
+.work img{
+    transition: transform .2s;
+}
+
 .work img:hover {
     box-shadow: 5px 5px 0px 0px #86214d;
+    transform: scale(1.02);
 }
 
 #link-left {
