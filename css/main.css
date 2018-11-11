@@ -453,6 +453,43 @@ img#polish {
     color: #86214d;
 }
 
+/*TEAM PROFILES*/
+
+#team {
+    background-color: #f5f4f4;
+}
+
+#profiles ul {
+    justify-content: center;
+    list-style: none;
+    display: inline-flex;
+    flex-wrap: wrap;
+    padding: 0;
+}
+#profiles ul li {
+    background-color: white;
+    text-align: center;
+    width: 250px;
+    height: 325px;
+    margin: 5px;
+    transition: 0.5s;
+}
+#profiles ul li:hover {
+    box-shadow: 5px 5px 0px 0px #86214d;
+    transform: scale(1.02);
+}
+#profiles ul li img {
+    border: 1px solid #f5f4f4;
+    background-color: #f5f4f4;
+    border-radius: 85px;
+    padding: 20px;
+    margin: 20px;
+}
+#profiles ul li img:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
 
 /*RESPONSIVE STYLES*/
 
@@ -506,7 +543,6 @@ img#polish {
         padding: 30px 0;
     }
     #schedule {
-        text-align: center;
         border-right: 3px solid #86214d;
     }
     .calendar {
@@ -521,7 +557,6 @@ img#polish {
         width: 10px;
     }
     #prices {
-        text-align: center;
         border-left: 3px solid #86214d;
     }
 }
