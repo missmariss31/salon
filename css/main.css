@@ -463,6 +463,34 @@ img#polish {
 .soc-icon:hover {
     opacity: 0.5;
 }
+
+/*TESTIMONIALS*/
+#quote {
+    background-image: url("/img/background/salon-bg.jpg");
+    padding: 55px 200px;
+    background-repeat: no-repeat;
+    background-size: 2035px;
+    background-position-x: -75px;
+    opacity: 0.8;
+}
+.inner-text {
+    background-color: white;
+    padding-bottom: 30px;
+    max-height: 625px;
+    overflow: scroll;
+}
+.ratings {
+    padding: 0;
+    width: 100%;
+    text-align: center;
+}
+.ratings li {
+    display: inline;
+    list-style-type: none;
+}
+#client {
+    text-align: center;
+}
 /*MEDIA QUERIES*/
 
 @media screen and (max-width: 1430px) {
@@ -529,6 +557,15 @@ img#polish {
     }
     #prices {
         border-left: 3px solid #86214d;
+    }
+    #quote {
+        width: 100%;
+        height: auto;
+        padding: 30px;
+    }
+    .inner-text {
+        width: 100%;
+        height: auto;
     }
 }
 @media screen and (max-width: 450px) {
